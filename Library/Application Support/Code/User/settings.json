@@ -1,0 +1,9 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "javascript.implicitProjectConfig.checkJs": true,
+    "editor.fontSize": 14,
+    "terminal.integrated.fontSize": 14
+}
