@@ -1,2 +1,5 @@
 brew "git"
 brew "node"
+cask "skype"
+cask "google-chrome"
+cask "opera"
