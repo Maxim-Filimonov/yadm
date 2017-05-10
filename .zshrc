@@ -1,6 +1,7 @@
 # GPG needs this to work in zsh
 export GPG_TTY=`tty`
-
+# Yarn Path setup
+export PATH="$PATH:`yarn global bin`"
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/maxim/.oh-my-zsh
