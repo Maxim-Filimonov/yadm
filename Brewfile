@@ -2,6 +2,9 @@ brew "mas"
 
 brew "git"
 brew "node"
+brew "yarn"
+brew "gnupg"
+
 cask "skype"
 cask "google-chrome"
 cask "opera"
