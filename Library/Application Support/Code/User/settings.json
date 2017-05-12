@@ -6,5 +6,6 @@
     "javascript.implicitProjectConfig.checkJs": true,
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Solarized Light"
 }
