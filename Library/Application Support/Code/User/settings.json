@@ -7,5 +7,13 @@
     "editor.fontSize": 14,
     "terminal.integrated.fontSize": 14,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Solarized Light"
+    "workbench.colorTheme": "Solarized Light",
+    "extension-manager.extensions": [
+        "abusaidm.html-snippets",
+        "coderfee.open-html-in-browser",
+        "ecmel.vscode-html-css",
+        "msjsdiag.debugger-for-chrome",
+        "vscodevim.vim",
+        "webstp.extension-manager"
+    ]
 }
