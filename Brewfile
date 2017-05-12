@@ -8,6 +8,7 @@ brew "gnupg"
 cask "skype"
 cask "google-chrome"
 cask "opera"
+cask "vlc"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
