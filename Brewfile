@@ -4,6 +4,7 @@ brew "git"
 brew "node"
 brew "yarn"
 brew "gnupg"
+brew "mongodb"
 
 cask "skype"
 cask "google-chrome"
