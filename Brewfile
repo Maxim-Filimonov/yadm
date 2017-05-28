@@ -26,3 +26,4 @@ mas "Numbers", id: 409203825
 mas "Xcode", id: 497799835
 mas "iMovie", id: 408981434
 mas "Pocket", id: 568494494
+mas "Copy'em Paste", id: 876540291
