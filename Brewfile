@@ -1,3 +1,8 @@
+# Taps to make cask work
+tap 'caskroom/cask'
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+
 brew "mas"
 
 brew "git"
