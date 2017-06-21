@@ -85,4 +85,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias restart-camera="sudo killall VDCAssistant; ~/scripts/replug_camera"
+alias restart-camera="sudo killall VDCAssistant; sudo ~/scripts/replug_camera"
