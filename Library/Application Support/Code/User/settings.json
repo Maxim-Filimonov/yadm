@@ -15,5 +15,7 @@
         "msjsdiag.debugger-for-chrome",
         "vscodevim.vim",
         "webstp.extension-manager"
-    ]
+    ],
+    "typescript.check.npmIsInstalled": false,
+    "vim.disableAnnoyingNeovimMessage": true
 }
