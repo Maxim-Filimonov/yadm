@@ -1,7 +1,7 @@
 # Taps to make cask work
-tap 'caskroom/cask'
-tap 'homebrew/bundle'
-tap 'homebrew/core'
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
 
 brew "mas"
 
@@ -10,11 +10,15 @@ brew "node"
 brew "yarn"
 brew "gnupg"
 brew "mongodb"
+brew "watchman"
+brew "yadm"
 
 cask "skype"
 cask "google-chrome"
 cask "opera"
 cask "vlc"
+cask "keycastr"
+cask "grammarly"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
@@ -26,4 +30,4 @@ mas "Numbers", id: 409203825
 mas "Xcode", id: 497799835
 mas "iMovie", id: 408981434
 mas "Pocket", id: 568494494
-mas "Copy'em Paste", id: 876540291
+mas 'Copy"em Paste', id: 876540291
