@@ -12,6 +12,7 @@ brew "gnupg"
 brew "mongodb"
 brew "watchman"
 brew "yadm"
+brew "todo-txt"
 
 cask "skype"
 cask "google-chrome"
