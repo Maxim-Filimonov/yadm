@@ -20,6 +20,7 @@ cask "opera"
 cask "vlc"
 cask "keycastr"
 cask "grammarly"
+cask "dropbox"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
