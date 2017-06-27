@@ -40,6 +40,10 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 # For a full list of active aliases, run `alias`.
 
 alias restart-camera="sudo killall VDCAssistant; sudo ~/scripts/replug_camera"
+# Todo.txt aliases
+alias ta="todo.sh add"
+alias tr="todo.sh rm"
+alias td="todo.sh donow"
 
 # Source private variables
 source ~/.env.priv
