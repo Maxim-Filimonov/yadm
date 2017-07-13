@@ -44,6 +44,7 @@ alias restart-camera="sudo killall VDCAssistant; sudo ~/scripts/replug_camera"
 alias ta="todo.sh add"
 alias tr="todo.sh rm"
 alias td="todo.sh donow"
+alias tc="todo.sh do"
 alias tl="todo.sh ls"
 
 # Source private variables
