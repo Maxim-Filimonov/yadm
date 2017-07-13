@@ -29,6 +29,8 @@
         "webstp.extension-manager",
         "xabikos.JavaScriptSnippet"
     ],
-    "typescript.check.npmIsInstalled": false,
-    "vim.disableAnnoyingNeovimMessage": true
+    "vim.disableAnnoyingNeovimMessage": true,
+    "typescript.check.tscVersion": false,
+    "javascript.validate.enable": false,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": true
 }
