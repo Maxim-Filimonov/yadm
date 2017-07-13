@@ -9,12 +9,25 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Solarized Light",
     "extension-manager.extensions": [
+        "EditorConfig.EditorConfig",
         "abusaidm.html-snippets",
+        "avli.clojure",
+        "chenxsan.vscode-standardjs",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
         "coderfee.open-html-in-browser",
         "ecmel.vscode-html-css",
+        "eg2.tslint",
+        "eg2.vscode-npm-script",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "jasonnutter.search-node-modules",
         "msjsdiag.debugger-for-chrome",
+        "octref.vetur",
+        "oysun.vuehelper",
         "vscodevim.vim",
-        "webstp.extension-manager"
+        "webstp.extension-manager",
+        "xabikos.JavaScriptSnippet"
     ],
     "typescript.check.npmIsInstalled": false,
     "vim.disableAnnoyingNeovimMessage": true
