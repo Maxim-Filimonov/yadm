@@ -6,8 +6,11 @@ Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'vim-syntastic/syntastic'
-
+Plug 'w0rp/ale'
+Plug 'floobits/floobits-neovim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+Plug 'cohama/lexima.vim'
 call plug#end()
 
 colo Tomorrow-Night
@@ -36,12 +39,16 @@ set expandtab
 set title                         " Set the terminal's title
 set visualbell                    " No beeping.
 
-" Recommended syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" Put this in vimrc or a plugin file of your own.
+" After this is configured, :ALEFix will try and fix your JS code with
+" ESLint.
+let g:ale_fixers = {
+\   'javascript': ['eslint'],
+\}
+"
+" Set this setting in vimrc if you want to fix files automatically on save.
+" This is off by default.
+let g:ale_fix_on_save = 1
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" Enable JSX for js too
+let g:jsx_ext_required = 0
