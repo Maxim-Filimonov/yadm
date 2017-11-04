@@ -14,7 +14,6 @@ Plug 'cohama/lexima.vim'
 call plug#end()
 
 colo Tomorrow-Night
-imap ` <Esc>
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
