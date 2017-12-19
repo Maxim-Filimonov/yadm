@@ -14,6 +14,7 @@ brew "watchman"
 brew "yadm"
 brew "todo-txt"
 brew "neovim"
+brew "zsh"
 brew "antigen"
 
 cask "skype"

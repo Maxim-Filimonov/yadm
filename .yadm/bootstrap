@@ -13,6 +13,8 @@ if [ "$system_type" = "Darwin" ]; then
   if [ -f "$HOME/.Brewfile" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
+    echo "Changing default shell to zsh"
+    chsh -s $(which /bin/zsh)
   fi
 
 fi
