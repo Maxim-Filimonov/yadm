@@ -24,7 +24,7 @@ cask "grammarly"
 cask "dropbox"
 cask "alfred"
 cask "1password"
-cast "iterm2"
+cask "iterm2"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
