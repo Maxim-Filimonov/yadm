@@ -16,6 +16,7 @@ brew "todo-txt"
 brew "neovim"
 brew "zsh"
 brew "antigen"
+brew "tmux"
 
 cask "skype"
 cask "google-chrome"
@@ -27,6 +28,10 @@ cask "dropbox"
 cask "alfred"
 cask "1password"
 cask "iterm2"
+cask "caffeine"
+cask "duet"
+cask "omnifocus"
+cask "fantastical"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
