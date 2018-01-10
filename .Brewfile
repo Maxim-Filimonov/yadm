@@ -3,9 +3,9 @@ tap "caskroom/cask"
 tap "homebrew/bundle"
 tap "homebrew/core"
 
+brew "git"
 brew "mas"
 
-brew "git"
 brew "node"
 brew "yarn"
 brew "gnupg"
@@ -44,3 +44,4 @@ mas "Xcode", id: 497799835
 mas "Pocket", id: 568494494
 mas 'Copy"em Paste', id: 876540291
 mas 'BreakTime', id: 427475982
+mas 'Spark', id: 1176895641
