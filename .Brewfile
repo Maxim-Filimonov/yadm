@@ -17,6 +17,7 @@ brew "neovim"
 brew "zsh"
 brew "antigen"
 brew "tmux"
+brew "python3"
 
 cask "skype"
 cask "google-chrome"
@@ -27,11 +28,13 @@ cask "grammarly"
 cask "dropbox"
 cask "alfred"
 cask "1password"
-cask "iterm2"
 cask "caffeine"
 cask "duet"
 cask "omnifocus"
 cask "fantastical"
+cask "hyper"
+cask "speedify"
+cask "visual-studio-code"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
@@ -45,3 +48,6 @@ mas "Pocket", id: 568494494
 mas 'Copy"em Paste', id: 876540291
 mas 'BreakTime', id: 427475982
 mas 'Spark', id: 1176895641
+mas 'Pages', id: 409201541
+mas 'Focus Matrix (1.2)', id: 1087284172
+mas 'Be Focused Pro (1.6.2)',id: 961632517
