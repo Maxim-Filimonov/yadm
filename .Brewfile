@@ -18,6 +18,7 @@ brew "zsh"
 brew "antigen"
 brew "tmux"
 brew "python3"
+brew "mosh"
 
 cask "skype"
 cask "google-chrome"
@@ -35,6 +36,8 @@ cask "fantastical"
 cask "hyper"
 cask "speedify"
 cask "visual-studio-code"
+cask "dash"
+cask "zoomus"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
