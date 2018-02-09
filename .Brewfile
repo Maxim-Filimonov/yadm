@@ -38,6 +38,8 @@ cask "speedify"
 cask "visual-studio-code"
 cask "dash"
 cask "zoomus"
+cask "messenger"
+cask "Evernote"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
