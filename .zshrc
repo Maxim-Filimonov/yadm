@@ -28,3 +28,4 @@ export SSH_KEY_PATH="~/.ssh/id_rsa"
 source ~/.env.priv
 
 export PATH="$HOME/.yarn/bin:$PATH"
+export GPG_TTY=$(tty)
