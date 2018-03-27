@@ -17,6 +17,7 @@ brew "neovim"
 brew "zsh"
 brew "antigen"
 brew "tmux"
+brew "python2"
 brew "python3"
 brew "mosh"
 
