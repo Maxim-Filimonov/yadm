@@ -29,3 +29,5 @@ source ~/.env.priv
 
 export PATH="$HOME/.yarn/bin:$PATH"
 export GPG_TTY=$(tty)
+
+alias vim=nvim
