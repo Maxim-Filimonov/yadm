@@ -31,3 +31,8 @@ export PATH="$HOME/.yarn/bin:$PATH"
 export GPG_TTY=$(tty)
 
 alias vim=nvim
+
+# Setup react native android env
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools

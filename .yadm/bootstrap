@@ -18,3 +18,5 @@ if [ "$system_type" = "Darwin" ]; then
   fi
 
 fi
+# Disable apple press and hold function for vscode - so that we can use vim mode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
