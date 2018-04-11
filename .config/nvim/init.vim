@@ -13,7 +13,7 @@ Plug 'mxw/vim-jsx'
 Plug 'cohama/lexima.vim'
 call plug#end()
 
-colo Tomorrow-Night
+colo Tomorrow
 
 set showcmd                       " Display incomplete commands.
 set showmode                      " Display the mode you're in.
