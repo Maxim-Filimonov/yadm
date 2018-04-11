@@ -48,6 +48,10 @@ cask "docker"
 cask "mattermost"
 cask "Alfred"
 cask "obs"
+cask "toggl"
+cask "graphql-playground"
+cask "charles"
+cask "firefox"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
