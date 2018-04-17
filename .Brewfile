@@ -52,6 +52,7 @@ cask "toggl"
 cask "graphql-playground"
 cask "charles"
 cask "firefox"
+cask "kap"
 
 mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
