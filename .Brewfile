@@ -53,8 +53,9 @@ cask "graphql-playground"
 cask "charles"
 cask "firefox"
 cask "kap"
+cask 'franz'
+cask 'istat-menus'
 
-mas "Monit", id: 1014850245
 mas "Harvest", id: 506189836
 mas "Magnet", id: 441258766
 mas "Speedtest", id: 1153157709
