@@ -21,6 +21,8 @@ brew "python2"
 brew "python3"
 brew "mosh"
 brew "awscli"
+brew "nvm"
+brew "elm"
 
 cask "skype"
 cask "google-chrome"
@@ -28,7 +30,6 @@ cask "opera"
 cask "vlc"
 cask "keycastr"
 cask "grammarly"
-cask "dropbox"
 cask "1password"
 cask "caffeine"
 cask "duet"
@@ -41,20 +42,22 @@ cask "dash"
 cask "zoomus"
 cask "messenger"
 cask "Paw"
-cask "Cardhop"
 cask "steveschow-gfxcardstatus"
 cask "Slack"
 cask "docker"
-cask "mattermost"
-cask "Alfred"
+cask "LaunchBar"
 cask "obs"
-cask "toggl"
 cask "graphql-playground"
 cask "charles"
 cask "firefox"
 cask "kap"
 cask 'franz'
 cask 'istat-menus'
+cask 'hazel'
+cask 'atom'
+cask 'flux'
+cask 'recordit'
+cask 'bartender'
 
 mas "Harvest", id: 506189836
 mas "Magnet", id: 441258766
@@ -68,5 +71,8 @@ mas 'Copy"em Paste', id: 876540291
 mas 'BreakTime', id: 427475982
 mas 'Spark', id: 1176895641
 mas 'Pages', id: 409201541
-mas 'Focus Matrix (1.2)', id: 1087284172
-mas 'Be Focused Pro (1.6.2)',id: 961632517
+mas 'Ulysses', id: 1225570693 
+mas 'Freckle', id: 879917538
+mas 'Tick Time Tracking (1.2)', id: 993200850 
+mas 'DaisyDisk (4.6.5)', id: 411643860 
+
