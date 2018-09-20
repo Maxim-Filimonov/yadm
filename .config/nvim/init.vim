@@ -11,6 +11,10 @@ Plug 'floobits/floobits-neovim'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'cohama/lexima.vim'
+Plug 'elmcast/elm-vim'
+Plug 'Shougo/deoplete.nvim'
+Plug 'pbogut/deoplete-elm'
+
 call plug#end()
 
 colo Tomorrow
@@ -51,3 +55,7 @@ let g:ale_fix_on_save = 1
 
 " Enable JSX for js too
 let g:jsx_ext_required = 0
+
+let mapleader = ","
+" Enable completion 
+let g:deoplete#enable_at_startup = 1
