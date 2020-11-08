@@ -36,6 +36,9 @@ cask 'choosy'
 cask 'microsoft-teams'
 cask 'slack'
 cask 'Opera'
+cask 'loom'
+cask 'adobe-creative-cloud'
+cask 'Hazel'
 
 mas 'Magnet', id: 441258766
 mas 'Day One', id: 1055511498
