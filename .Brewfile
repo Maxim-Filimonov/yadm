@@ -9,7 +9,6 @@ brew 'git'
 brew 'mas'
 
 brew 'gnupg'
-brew 'dart'
 brew 'watchman'
 brew 'yadm'
 brew 'neovim'
@@ -18,6 +17,10 @@ brew 'antigen'
 brew 'tmux'
 brew 'mosh'
 brew 'asdf'
+# Elixir
+tap 'gigalixir/brew' 
+brew 'elixir'
+brew 'gigalixir'
 
 cask 'google-chrome'
 cask 'grammarly'
@@ -39,6 +42,10 @@ cask 'Opera'
 cask 'loom'
 cask 'adobe-creative-cloud'
 cask 'Hazel'
+
+# Flutter
+cask 'flutter'
+
 
 mas 'Magnet', id: 441258766
 mas 'Day One', id: 1055511498
