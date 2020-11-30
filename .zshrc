@@ -40,3 +40,13 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 . /usr/local/opt/asdf/asdf.sh
 alias brew-bundle='brew bundle --global --verbose'
+
+# SATORI CONFIG
+export SATORI_DATABASE_USER=postgres
+export SATORI_DATABASE_PWD=password
+
+# ZSH history sharing
+# Appends every command to the history file once it is executed
+setopt inc_append_history
+# Reloads the history whenever you use it
+setopt share_history

@@ -21,6 +21,8 @@ brew 'asdf'
 tap 'gigalixir/brew' 
 brew 'elixir'
 brew 'gigalixir'
+# Satori
+brew 'imagemagick@6'
 
 cask 'google-chrome'
 cask 'grammarly'
@@ -33,7 +35,8 @@ cask 'Paw'
 cask 'docker'
 cask 'alfred'
 cask 'graphql-playground'
-cask 'hyper'
+#cask 'hyper
+cask 'iterm2'
 cask 'ngrok'
 cask 'choosy'
 cask 'microsoft-teams'
