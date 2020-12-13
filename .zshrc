@@ -42,7 +42,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 alias brew-bundle='brew bundle --global --verbose'
 
 # SATORI CONFIG
-export SATORI_DATABASE_USER=postgres
+export SATORI_DATABASE_USER=maxim
 export SATORI_DATABASE_PWD=password
 
 # ZSH history sharing
@@ -50,3 +50,9 @@ export SATORI_DATABASE_PWD=password
 setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Enable iex shell history
+export ERL_AFLAGS="-kernel shell_history enabled"
+
