@@ -17,9 +17,8 @@ brew 'antigen'
 brew 'tmux'
 brew 'mosh'
 brew 'asdf'
+brew 'gh'
 # Elixir
-tap 'gigalixir/brew' 
-brew 'elixir'
 brew 'gigalixir'
 # Satori
 brew 'imagemagick@6'
@@ -27,10 +26,9 @@ brew 'imagemagick@6'
 cask 'google-chrome'
 cask 'grammarly'
 cask '1password'
-cask 'speedify'
 cask 'visual-studio-code'
 cask 'dash'
-cask 'zoomus'
+cask 'zoom'
 cask 'Paw'
 cask 'docker'
 cask 'alfred'
@@ -44,10 +42,14 @@ cask 'slack'
 cask 'Opera'
 cask 'loom'
 cask 'adobe-creative-cloud'
-cask 'Hazel'
+#cask 'Hazel'
 
 # Flutter
-cask 'flutter'
+#cask 'flutter'
+
+# Elixir
+# Hound
+cask 'chromedriver'
 
 
 mas 'Magnet', id: 441258766
@@ -57,3 +59,4 @@ mas 'Xcode', id: 497799835
 mas 'Spark', id: 1176895641
 mas 'Pages', id: 409201541
 mas 'Endel', id: 1484348796
+mas 'iAWriter', id: 775737590
