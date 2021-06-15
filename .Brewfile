@@ -25,6 +25,7 @@ brew 'imagemagick@6'
 # Database
 brew 'postgresql'
 
+brew 'watchexec'
 brew 'direnv'
 
 cask 'google-chrome'
@@ -43,11 +44,12 @@ cask 'ngrok'
 cask 'choosy'
 cask 'microsoft-teams'
 cask 'slack'
-cask 'Opera'
+cask 'microsoft-edge'
 cask 'loom'
-cask 'adobe-creative-cloud'
+#cask 'adobe-creative-cloud'
 #cask 'Hazel'
 cask 'tg-pro'
+cask 'speedify'
 
 # Flutter
 #cask 'flutter'
