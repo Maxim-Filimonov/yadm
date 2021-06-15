@@ -22,6 +22,10 @@ brew 'gh'
 brew 'gigalixir'
 # Satori
 brew 'imagemagick@6'
+# Database
+brew 'postgresql'
+
+brew 'direnv'
 
 cask 'google-chrome'
 cask 'grammarly'
@@ -43,6 +47,7 @@ cask 'Opera'
 cask 'loom'
 cask 'adobe-creative-cloud'
 #cask 'Hazel'
+cask 'tg-pro'
 
 # Flutter
 #cask 'flutter'

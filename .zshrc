@@ -1,11 +1,10 @@
-source /usr/local/share/antigen/antigen.zsh
-
+source /opt/homebrew/share/antigen/antigen.zsh
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
-antigen bundle command-not-found
+antigen bundle command-not-found asdf
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -36,9 +35,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
-
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/asdf.sh
 alias brew-bundle='brew bundle --global --verbose'
 
 # SATORI CONFIG
@@ -56,3 +53,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Enable iex shell history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
+eval "$(direnv hook zsh)"
