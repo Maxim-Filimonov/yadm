@@ -1,4 +1,3 @@
-# Taps to make cask work
 tap 'homebrew/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
@@ -32,20 +31,20 @@ cask 'google-chrome'
 cask 'grammarly'
 cask '1password'
 cask 'visual-studio-code'
-cask 'dash'
+#cask 'dash'
 cask 'zoom'
 cask 'Paw'
 cask 'docker'
 cask 'alfred'
 cask 'graphql-playground'
-#cask 'hyper
-cask 'iterm2'
+cask 'hyper'
+#cask 'iterm2'
 cask 'ngrok'
 cask 'choosy'
 cask 'microsoft-teams'
 cask 'slack'
 cask 'microsoft-edge'
-cask 'loom'
+#cask 'loom'
 #cask 'adobe-creative-cloud'
 #cask 'Hazel'
 cask 'tg-pro'
@@ -57,13 +56,13 @@ cask 'speedify'
 # Elixir
 # Hound
 cask 'chromedriver'
+cask 'superhuman'
 
 
 mas 'Magnet', id: 441258766
 mas 'Day One', id: 1055511498
 mas 'Numbers', id: 409203825
 mas 'Xcode', id: 497799835
-mas 'Spark', id: 1176895641
 mas 'Pages', id: 409201541
 mas 'Endel', id: 1484348796
 mas 'iAWriter', id: 775737590
