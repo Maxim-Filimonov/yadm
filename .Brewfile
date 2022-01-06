@@ -1,6 +1,7 @@
 tap 'homebrew/cask'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
+tap 'homebrew/services'
 tap 'heroku/brew'
 tap 'dart-lang/dart'
 
@@ -17,8 +18,6 @@ brew 'tmux'
 brew 'mosh'
 brew 'asdf'
 brew 'gh'
-# Elixir
-brew 'gigalixir'
 # Satori
 brew 'imagemagick@6'
 # Database
@@ -65,4 +64,4 @@ mas 'Numbers', id: 409203825
 mas 'Xcode', id: 497799835
 mas 'Pages', id: 409201541
 mas 'Endel', id: 1484348796
-mas 'iAWriter', id: 775737590
+#mas 'iAWriter', id: 775737590
