@@ -86,7 +86,7 @@ module.exports = {
     bell: 'SOUND',
 
     // if true, selected text will automatically be copied to the clipboard
-    copyOnSelect: false
+    copyOnSelect: true
 
     // if true, on right click selected text will be copied or pasted if no
     // selection is present (true by default on Windows)
@@ -109,7 +109,8 @@ module.exports = {
     'hypercwd',
     'hyperlinks',
     'hyper-day-night-switch',
-    "hyperalfred"
+    "hyperalfred",
+    "verminal"
   ],
 
   // in development, you can create a directory under
