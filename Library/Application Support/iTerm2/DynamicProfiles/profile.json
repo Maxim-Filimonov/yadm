@@ -3,6 +3,7 @@
     {
       "Name": "Developer",
       "Guid": "ba19744f-6af3-434d-aaa6-0a48e0969958",
+      "Working Directory" : "\/Users\/maxim",
       "Keyboard Map" : {
         "0xf700-0x260000" : {
           "Action" : 10,

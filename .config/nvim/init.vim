@@ -18,7 +18,6 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'cohama/lexima.vim'
 Plug 'elmcast/elm-vim'
-Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 

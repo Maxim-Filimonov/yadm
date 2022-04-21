@@ -57,6 +57,8 @@ cask 'microsoft-edge'
 #cask 'Hazel'
 cask 'tg-pro'
 cask 'speedify'
+cask 'mongodb-compass'
+cask 'raycast'
 
 # Flutter
 cask 'flutter'
@@ -66,6 +68,11 @@ cask 'applesimutils'
 # Hound
 cask 'chromedriver'
 cask 'superhuman'
+
+# Membrane framework
+brew 'ffmpeg'
+brew 'portaudio'
+brew 'mad'
 
 
 mas 'Magnet', id: 441258766
