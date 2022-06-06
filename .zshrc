@@ -11,6 +11,7 @@ antigen bundle docker
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle "MichaelAquilina/zsh-auto-notify"
 
 # Load the theme.
 antigen theme robbyrussell
@@ -70,3 +71,12 @@ if [ -f '/Users/maxim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxim/goo
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/maxim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxim/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$PATH":"/usr/local/Caskroom/flutter/2.5.3/flutter/.pub-cache/bin"
+
+# Android
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home
+
+# STARSHIP
+eval "$(starship init zsh)"
