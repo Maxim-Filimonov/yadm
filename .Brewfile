@@ -8,6 +8,7 @@ tap "gigalixir/brew"
 tap "homebrew/cask-versions"
 tap "mongodb/brew"
 tap "wix/brew"
+tap "1password/tap/1password-cli"
 
 brew "git"
 brew "mas"
@@ -29,6 +30,7 @@ brew "postgresql"
 brew "watchexec"
 brew "direnv"
 brew "terminal-notifier"
+brew "shellcheck"
 
 cask "google-chrome"
 cask "grammarly"
@@ -59,6 +61,8 @@ cask "mongodb-compass"
 cask "raycast"
 cask "font-cascadia-code"
 cask "font-fira-code-nerd-font"
+cask 'expressvpn'
+cask "1password-cli"
 
 # Flutter
 cask "flutter"
