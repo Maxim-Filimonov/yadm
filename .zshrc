@@ -40,8 +40,7 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-  . /usr/local/opt/asdf/libexec/asdf.sh
-
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 alias brew-bundle='brew bundle --global --verbose'
 
 # SATORI CONFIG

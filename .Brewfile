@@ -3,7 +3,6 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "heroku/brew"
-#tap 'dart-lang/dart'
 tap "gigalixir/brew"
 tap "homebrew/cask-versions"
 tap "mongodb/brew"
@@ -24,7 +23,6 @@ brew "mosh"
 brew "asdf"
 brew "gh"
 brew "starship"
-# Database
 brew "postgresql"
 
 brew "watchexec"
@@ -36,25 +34,17 @@ cask "google-chrome"
 cask "grammarly"
 cask "1password"
 cask "visual-studio-code"
-#cask 'dash'
 cask "zoom"
 cask "Paw"
 cask "docker"
 cask "alfred"
 cask "graphql-playground"
 cask "hyper"
-#cask 'iterm2'
 cask "ngrok"
 cask "choosy"
 cask "microsoft-teams"
 cask "slack"
 cask "microsoft-edge"
-#cask 'adobe-creative-cloud'
-#cask 'Opera'
-#cask 'loom'
-#cask 'adobe-creative-cloud'
-#cask 'blender'
-#cask 'Hazel'
 cask "tg-pro"
 cask "speedify"
 cask "mongodb-compass"
@@ -70,8 +60,7 @@ brew "applesimutils"
 
 # Elixir
 # Hound
-cask "chromedriver"
-cask "superhuman"
+cask 'chromedriver'
 
 # Membrane framework
 brew "ffmpeg"
