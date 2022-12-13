@@ -28,6 +28,8 @@ brew "direnv"
 brew "terminal-notifier"
 brew "shellcheck"
 
+cask "fantastical"
+cask "fig"
 cask "google-chrome"
 cask "grammarly"
 cask "1password"

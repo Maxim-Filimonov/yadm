@@ -1,4 +1,9 @@
-source /usr/local/share/antigen/antigen.zsh
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+# pick and choose based on your homebrew installation
+source /opt/homebrew/share/antigen/antigen.zsh
+#source /usr/local/share/antigen/antigen.zsh
+#
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -79,3 +84,6 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home
 
 # STARSHIP
 eval "$(starship init zsh)"
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
