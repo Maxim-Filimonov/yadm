@@ -12,6 +12,9 @@ Install yadm
 ```
 brew install yadm
 ```
+
+Close this repo
+```
 yadm clone https://github.com/Maxim-Filimonov/yadm.git
 yadm status
 ```
