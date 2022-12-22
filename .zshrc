@@ -6,7 +6,8 @@ if [ -d "/opt/homebrew" ]; then
   . /opt/homebrew/opt/asdf/libexec/asdf.sh
   source /opt/homebrew/share/antigen/antigen.zsh
 else
-  . /usr/local/bin/asdf
+  # init asdf
+  . /usr/local/opt/asdf/libexec/asdf.sh
   source /usr/local/share/antigen/antigen.zsh
 fi
 #
