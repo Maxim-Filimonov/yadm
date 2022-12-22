@@ -38,8 +38,9 @@ cask "microsoft-edge"
 cask "tg-pro"
 cask "raycast"
 cask "font-cascadia-code"
-cask 'expressvpn'
-cask 'sigmaos'
+cask "expressvpn"
+cask "sigmaos"
+cask "setapp"
 
 mas "Magnet", id: 441258766
 mas "Day One", id: 1055511498
