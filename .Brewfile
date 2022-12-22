@@ -23,6 +23,7 @@ brew "starship"
 
 brew "terminal-notifier"
 brew "shellcheck"
+brew "organize-tool"
 
 cask "fantastical"
 cask "fig"
