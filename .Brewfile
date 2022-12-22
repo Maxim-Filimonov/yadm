@@ -22,6 +22,7 @@ brew "asdf"
 brew "gh"
 brew "starship"
 brew "postgresql"
+brew "dopplerhq/cli/doppler"
 
 brew "watchexec"
 brew "direnv"
@@ -47,8 +48,6 @@ cask "tg-pro"
 cask "speedify"
 cask "mongodb-compass"
 cask "raycast"
-cask "font-cascadia-code"
-cask "font-fira-code-nerd-font"
 cask 'expressvpn'
 cask "1password-cli"
 
