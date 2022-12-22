@@ -3,14 +3,16 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
-tap "1password/tap/1password-cli"
 
+
+# Needed for yadm decrypt
+brew "gpg"
+brew "yadm"
 
 brew "git"
 brew "mas"
 
 brew "watchman"
-brew "yadm"
 brew "neovim"
 brew "zsh"
 brew "antigen"

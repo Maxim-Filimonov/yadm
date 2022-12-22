@@ -1,8 +1,14 @@
 # Fig pre block. Keep at the top of this file.
 [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# pick and choose based on your homebrew installation
-source /opt/homebrew/share/antigen/antigen.zsh
-#source /usr/local/share/antigen/antigen.zsh
+
+# check if homebrew is new installation in /opt/homebrew
+if [ -d "/opt/homebrew" ]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+  source /opt/homebrew/share/antigen/antigen.zsh
+else
+  . /usr/local/bin/asdf
+  source /usr/local/share/antigen/antigen.zsh
+fi
 #
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -40,12 +46,6 @@ export GPG_TTY=$(tty)
 
 alias vim=nvim
 
-# Setup react native android env
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 alias brew-bundle='brew bundle --global --verbose'
 
 # SATORI CONFIG
@@ -59,12 +59,6 @@ setopt inc_append_history
 setopt share_history
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Enable iex shell history
-export ERL_AFLAGS="-kernel shell_history enabled"
-
-# Enable direnv integration
-eval "$(direnv hook zsh)"
 
 # Cocoapods
 export PATH=$PATH:/Users/maxim/.gem/ruby/2.6.0/bin
