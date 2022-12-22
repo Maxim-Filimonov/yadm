@@ -12,6 +12,6 @@ Install yadm
 ```
 brew install yadm
 ```
-
-yadm clone git@github.com:Maxim-Filimonov/yadm.git
+yadm clone https://github.com/Maxim-Filimonov/yadm.git
 yadm status
+```
