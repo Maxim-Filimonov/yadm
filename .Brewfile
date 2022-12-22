@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask-versions"
+tap "homebrew/cask-fonts"
 
 
 # Needed for yadm decrypt
