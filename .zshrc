@@ -1,5 +1,7 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig pre block. Keep at the top of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+fi
 
 # check if homebrew is new installation in /opt/homebrew
 if [ -d "/opt/homebrew" ]; then
@@ -80,5 +82,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home
 # STARSHIP
 eval "$(starship init zsh)"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig post block. Keep at the bottom of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+fi
