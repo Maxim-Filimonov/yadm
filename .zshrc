@@ -1,8 +1,17 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-# pick and choose based on your homebrew installation
-source /opt/homebrew/share/antigen/antigen.zsh
-#source /usr/local/share/antigen/antigen.zsh
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig pre block. Keep at the top of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+fi
+
+# check if homebrew is new installation in /opt/homebrew
+if [ -d "/opt/homebrew" ]; then
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+  source /opt/homebrew/share/antigen/antigen.zsh
+else
+  # init asdf
+  . /usr/local/opt/asdf/libexec/asdf.sh
+  source /usr/local/share/antigen/antigen.zsh
+fi
 #
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
@@ -40,12 +49,6 @@ export GPG_TTY=$(tty)
 
 alias vim=nvim
 
-# Setup react native android env
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 alias brew-bundle='brew bundle --global --verbose'
 
 # SATORI CONFIG
@@ -59,12 +62,6 @@ setopt inc_append_history
 setopt share_history
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-# Enable iex shell history
-export ERL_AFLAGS="-kernel shell_history enabled"
-
-# Enable direnv integration
-eval "$(direnv hook zsh)"
 
 # Cocoapods
 export PATH=$PATH:/Users/maxim/.gem/ruby/2.6.0/bin
@@ -85,5 +82,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home
 # STARSHIP
 eval "$(starship init zsh)"
 
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  # Fig post block. Keep at the bottom of this file.
+  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+fi

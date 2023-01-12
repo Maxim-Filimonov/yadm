@@ -1,0 +1,27 @@
+# organize configuration file
+# https://organize.readthedocs.io
+
+rules:
+  - name: "Sort my invoices and receipts"
+    locations: ~/Downloads
+    subfolders: true
+    filters:
+      - extension: pdf
+      - name:
+          contains:
+            - Invoice
+            - Order
+            - Purchase
+          case_sensitive: false
+    actions:
+      - move: ~/Documents/Invoices/Other
+
+  - name: "Detect old download files"
+    locations:
+      - ~/Downloads
+    filters:
+      - date_lastused:
+          mode: "older"
+          months: 1
+    actions:
+      - trash
