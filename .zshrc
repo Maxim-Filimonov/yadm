@@ -86,3 +86,7 @@ if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   # Fig post block. Keep at the bottom of this file.
   [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
 fi
+
+# JAVA
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"

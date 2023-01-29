@@ -20,7 +20,6 @@ brew "antigen"
 brew "asdf"
 brew "gh"
 brew "starship"
-brew "postgresql"
 brew "dopplerhq/cli/doppler"
 
 brew "terminal-notifier"
