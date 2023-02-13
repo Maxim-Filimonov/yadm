@@ -45,6 +45,8 @@ cask "sigmaos"
 cask "setapp"
 cask "hey"
 cask "telegram"
+cask "whatsapp"
+cask "vlc"
 
 mas "Magnet", id: 441258766
 mas "Day One", id: 1055511498
