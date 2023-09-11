@@ -1,7 +1,6 @@
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   # Fig pre block. Keep at the top of this file.
-  [[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
-fi
+  fi
 
 # check if homebrew is new installation in /opt/homebrew
 if [ -d "/opt/homebrew" ]; then
@@ -72,6 +71,7 @@ if [ -f '/Users/maxim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxim/goo
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/maxim/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/maxim/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH="$PATH":"/usr/local/Caskroom/flutter/2.5.3/flutter/.pub-cache/bin"
+export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Android
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
@@ -84,5 +84,39 @@ eval "$(starship init zsh)"
 
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   # Fig post block. Keep at the bottom of this file.
-  [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
+  fi
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/maxim/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/maxim/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/maxim/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/maxim/anaconda3/bin:$PATH"
+    fi
 fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/maxim/.dart-cli-completion/zsh-config.zsh ]] && . /Users/maxim/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+
+# Python venv activation/deactivation
+python_venv() {
+  MYVENV=./venv
+  # when you cd into a folder that contains $MYVENV
+  [[ -d $MYVENV ]] && source $MYVENV/bin/activate > /dev/null 2>&1
+  # when you cd into a folder that doesn't
+  [[ ! -d $MYVENV ]] && deactivate > /dev/null 2>&1
+}
+autoload -U add-zsh-hook
+add-zsh-hook chpwd python_venv
+
+python_venv
