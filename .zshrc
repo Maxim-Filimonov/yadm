@@ -20,7 +20,6 @@ antigen bundle git
 antigen bundle command-not-found 
 antigen bundle per-directory-history
 antigen bundle dotenv
-antigen bundle docker
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -74,10 +73,13 @@ export PATH="$PATH":"/usr/local/Caskroom/flutter/2.5.3/flutter/.pub-cache/bin"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Android
+. ~/.asdf/plugins/java/set-java-home.zsh
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-13.jdk/Contents/Home
+# Android React Native
+export ANDROID_HOME=$ANDROID_SDK_ROOT
+
 
 # STARSHIP
 eval "$(starship init zsh)"
@@ -120,3 +122,18 @@ autoload -U add-zsh-hook
 add-zsh-hook chpwd python_venv
 
 python_venv
+export PATH="/opt/homebrew/opt/jpeg/bin:$PATH"
+
+## [Completion] 
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /Users/tpaktop/.dart-cli-completion/zsh-config.zsh ]] && . /Users/tpaktop/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
+export PATH=$PATH:$HOME/.maestro/bin
+
+# Modular
+export MODULAR_HOME="$HOME/.modular"
+export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+
+# Generated for envman. Do not edit.
+[ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"

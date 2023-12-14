@@ -4,6 +4,9 @@ ap-southeast-2 = "au-2"
 ap-southeast-1 = "au-1"
 us-east-1 = "va"
 
+[battery]
+disabled = true
+
 [buf]
 symbol = " "
 

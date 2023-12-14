@@ -18,6 +18,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'cohama/lexima.vim'
 Plug 'elmcast/elm-vim'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
