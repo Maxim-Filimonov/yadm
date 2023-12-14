@@ -135,5 +135,6 @@ export PATH=$PATH:$HOME/.maestro/bin
 export MODULAR_HOME="$HOME/.modular"
 export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 
+# Install via curl -sS https://webi.sh/serviceman | sh
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
