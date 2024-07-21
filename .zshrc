@@ -18,8 +18,8 @@ antigen use oh-my-zsh
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
 antigen bundle git
 antigen bundle command-not-found 
-antigen bundle per-directory-history
-antigen bundle dotenv
+#antigen bundle per-directory-history
+#antigen bundle dotenv
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -55,7 +55,7 @@ alias brew-bundle='brew bundle --global --verbose'
 
 # ZSH history sharing
 # Appends every command to the history file once it is executed
-setopt inc_append_history
+#setopt inc_append_history
 # Reloads the history whenever you use it
 setopt share_history
 
@@ -63,6 +63,9 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Cocoapods
 export PATH=$PATH:/Users/maxim/.gem/ruby/2.6.0/bin
+
+# Google Cloud takes precedence over the rest
+export PATH=/opt/homebrew/share/google-cloud-sdk/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/maxim/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/maxim/google-cloud-sdk/path.zsh.inc'; fi
@@ -138,3 +141,25 @@ export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
 # Install via curl -sS https://webi.sh/serviceman | sh
 # Generated for envman. Do not edit.
 [ -s "$HOME/.config/envman/load.sh" ] && source "$HOME/.config/envman/load.sh"
+
+# a function to kill whatever is running on specific port
+killport() {
+  lsof -i tcp:$1 | awk 'NR!=1 {print $2}' | xargs kill -9
+}
+
+PATH=~/.console-ninja/.bin:$PATH
+
+# bit
+case ":$PATH:" in
+  *":/Users/tpaktop/bin:"*) ;;
+  *) export PATH="$PATH:/Users/tpaktop/bin" ;;
+esac
+# bit end
+
+# pnpm
+export PNPM_HOME="/Users/tpaktop/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
